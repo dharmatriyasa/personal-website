@@ -185,20 +185,23 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    height: 1500px;
-    padding: 0px 150px;
+    height: 1150px;
+    padding: 0px 150px 200px 150px;
 }
 
 .portofolio-section-title{
     flex-basis: 5%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .pst-text{
     flex-basis: 40%;
-    font-size: 1em;
+    font-size: 0.75em;
     color: #797575;
+    letter-spacing: 0.5em;
+    padding-bottom: 20px;
 }
 
 .pst-headline{
@@ -211,31 +214,82 @@ header{
     flex-basis: 95%;
     display: flex;
     flex-direction: column;
-    height: 1500px;
 }
 
 .psm-column{
-    flex-basis: 33.33%;
+    flex-basis: 50%;
     padding: 20px 0px;
     display: flex;
     flex-direction: row;
 }
 
-.psm-box{
-    flex-basis: 50%;
+.psm-box-1,
+.psm-box-2{
+    flex-basis: 30%;
     margin: 0px 20px;
-    background-color: #000000;
     display: flex;
     flex-direction: column;
-    border: 1px solid #09F755;
     color: #feffff;
 }
 
-.psm-box:hover{
-    box-shadow: 10px 10px #09F755;
+.psm-box-1:nth-child(1){
+    background-color: #fad0c4;
+    background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+}
+.psm-box-1:nth-child(2){
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
 }
 
-.psm-box-img{
+.psm-box-1:nth-child(3){
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+
+.psm-box-2:nth-child(1){
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+}
+
+.psm-box-2:nth-child(2){
+    background-color: #fce043;
+    background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+}
+
+.psm-box-2:nth-child(3){
+    background-color: #f39f86;
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
+.psm-box:hover{
+    box-shadow: 10px 10px #feffff;
+}
+
+.psm-top{
+    flex-basis: 40%;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.psm-middle{
+    flex-basis: 45%;
+    text-align: left;
+    color: #000000;
+    padding: 0px 30px 0px 70px;
+    font-size: 1.5em;
+}
+
+.psm-bottom{
+    flex-basis: 15%;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 0.6em;
+}
+
+/* .psm-box-img{
     flex-basis: 65%;
     width: 100%;
     height: 0px;
@@ -244,15 +298,15 @@ header{
 .psm-box-text{
     flex-basis: 20%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 10px 15px;
 }
 
 .psm-box-visit{
     flex-basis: 15%;
     text-align: center;
-    font-size: 1.5em;
-    border-top: 1px solid #09F755;
+    font-size: 1.1em;
+    border-top: 1px solid #feffff;
     padding: 15px 10px;
 }
 
@@ -265,423 +319,94 @@ header{
     top: 0;
     bottom: 0;
     width: 100%;
-}
+} */
 
-.title-section{
-    flex-basis: 50%;
-    padding: 10% 0 0 20%;
-    letter-spacing: 5px;
-    line-height: 60px;
-}
-
-.content-section{
-    flex-basis: 50%;
-    padding: 15% 15% 0 0;
-    line-height: 32px;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.container-problem{
+.contact-section{
     display: flex;
     flex-direction: column;
-    background-color: #feffff;
-    height: 100%;
-    margin-top: 100px;
+    height: 600px;
+    background-color: #000000;
+    padding: 0px 150px;
 }
 
-.problem-article-odd{
-    display: flex;
-    flex-direction: row;
+.contact-section-title{
     flex-basis: 25%;
-    background-color: #feffff;
-}
-
-.problem-article-even{
-    display: flex;
-    flex-direction: row;
-    flex-basis: 25%;
-    background-color: rgba(222, 242, 241, 0.5);
-}
-
-.problem-article-odd-image,
-.problem-article-even-image{
-    flex-basis: 45%;
-    padding-top: 10px;
-}
-
-.problem-article-odd-content,
-.problem-article-even-content{
-    flex-basis: 55%;
-}
-
-.image-main-problem{
-    width: 80%;
-    padding-left: 10%;
-}
-
-.image-main-problem-bigger{
-    width: 95%;
-    padding-top: 20px;
-}
-
-.center-title{
-    text-align: center;
-    padding: 50px 0;
-}
-
-.bigger-text{
-    font-size: 3em;
-}
-
-.problem-article-odd .title-section,
-.problem-article-even .title-section{
-    padding: 10% 30% 0 0;
-    letter-spacing: 5px;
-    line-height: 60px;
-}
-
-.problem-article-odd .content-section,
-.problem-article-even .content-section{
-    padding: 5% 30% 0 0;
-    line-height: 32px;
-    text-align: left;
-    font-size: 18px;
-}
-
-.problem-article-even .title-section,
-.problem-article-even .content-section{
-    text-align: right;
-    padding-right: 0;
-    padding-left: 30%;
-}
-
-.meet-guide{
-    background-color: #feffff;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 3% 0;
-}
-
-
-
-.title-meet-guide .bigger-text{
-    font-size: 2.5em;
-}
-
-.small-text{
-    font-size: 1.2em;
-}
-
-.center-paragraph{
-    text-align: center;
-    padding: 10px 120px;
-    line-height: 32px;
-}
-
-.container-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.card{
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    height: 400px;
-    background-color: #feffff;
-    padding: 10px;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.20);
-}
-
-.card-image{
-    flex-basis: 30%;
-    padding: 20px 0px;
-}
-
-.card-image img{
-    width: 30%;
-    display: block;
-    margin: 0 auto;
-}
-
-.card-section{
-    flex-basis: 50%;
-    padding: 25px 0px;
-    text-align: center;
-    color: #2B7A78;
-}
-
-.card-section h3{
-    font-weight: normal;
-}
-
-.card-section p{
-    color: #3AAFA9;
-    padding: 0px 25px;
-}
-
-.card-button{
-    flex: 20%;
-    display: block;
-    margin: 10% 10%;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 1px solid #22DFC0;
-    background-color: #feffff;
-    color: #2B7A78;
-    transition-duration: 0.5s;
-}
-
-.card-button:hover{
-    background-color: #22DFC0;
-    color: #feffff;
-}
-
-.form-section{
-    background-color: rgba(222, 242, 241, 0.5);
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 30px 0;
-    justify-content: center;
-}
-
-.fill-form{
-    flex-basis: 60%;
-    margin: 20px 10px 20px 100px;
-    padding: 20px;
-}
-
-.main-form{
     display: flex;
     flex-direction: column;
 }
 
-.main-form div{
-    margin: 20px 0px;
-}
-
-.main-form label{
-    margin-bottom: 15px;
-}
-
-.main-form input{
-    padding: 10px 70% 10px 10px;
-    background-color: inherit;
-    border: 1px solid #22DFC0;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    transition-duration: 0.5s;
-}
-
-.main-form input:hover{
-    border: 1px solid #17252A;
-}
-
-.two-column-form{
-    flex-basis: 16%;
-}
-
-.two-column-form .row-form-1{
-    display: inline-block;
-}
-
-.two-column-form .row-form-1 label{
-    display: block;
-}
-
-.one-row-form{
-    flex-basis: 16%;
-}
-
-.one-row-form label{
-    display: block;
-}
-
-.submit-form{
-    flex-basis: 16%;
-}
-
-.submit-form .submit-button{
-    display: block;
-    margin: 10% 40%;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 1px solid #22DFC0;
-    color: #2B7A78;
-    transition-duration: 0.5s;
-}
-
-.submit-button:hover{
-    background-color: #22DFC0;
-    color: #feffff;
-}
-
-.my-profile{
-    flex-basis: 30%;
-    margin: 20px 100px 20px 10px;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.20);
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    transition-duration: 1s;
-}
-
-.my-profile:hover{
-    box-shadow: 0px 0px 6px rgba(58,175,169,0.80);
-}
-
-.title-profile{
-    flex-basis: 10%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.image-profile{
+.cst-heading{
     flex-basis: 40%;
-    text-align: center;
+    color: #797575;
 }
 
-.biodata-profile{
+.cst-heading p{
+    font-size: 1em;
+    letter-spacing: 0.5em;
+}
+
+.cst-text{
+    flex-basis: 60%;
+    color: #feffff;
+}
+
+.cst-text p,
+.csmb-text p{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contact-section-main{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.csm-column{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+
+.csm-box{
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    margin: 10px 50px;
 }
 
-.profile-column{
+.csm-box:nth-child(2){
+    margin-left: 100px;
+}
+
+.csmb-heading{
     flex-basis: 20%;
+    color: #797575;
 }
 
-footer{
-    background-color: #17252A;
-    height: 100%;
+.csmb-text{
+    flex-basis: 40%;
     color: #feffff;
 }
 
-.container-header-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
+.csmb-heading p{
+    font-size: 0.75em;
+    color: #797575;
+    letter-spacing: 0.5em;
 }
 
-.footer-about-contact{
-    flex-basis: 55%;
-    display: flex;
-    flex-direction: row;
-}
 
-.footer-product-sosmed{
-    flex-basis: 45%;
-    display: flex;
-    flex-direction: row;
-}
-
-.flex-row{
-    flex-basis: 50%;
-}
-
-.flex-row .logo-company{
-    padding: 25px;
-}
-
-.flex-row p,
-.flex-row h3{
-    margin: 0px 10px 0px 80px;
-    text-align: justify;
-    color: #feffff;
-    line-height: 25px;
-}
-
-.flex-row .card-section{
-    text-align: left;
-}
-
-.product-list{
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 105px; 
-}
-
-.product-list li{
-    margin-bottom: 7%;
-}
-
-.product-list li a{
-    text-decoration: none;
-    color: #feffff;
-}
-
-.flex-row .fa{
-    padding: 20px;
-    font-size: 20px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px 2px 5px 4px;
-    background-color: #22DFC0;
-    color: #17252A;
-}
-
-.footer-icon{
-    tab-size: 4px;
-}
-
-.footer-icon a{
-    display: block;
-    padding: 0px 20px 20px 20px;
-    margin: 0px 15px 0px 65px;
-    color: #feffff;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.footer-icon i{
-    padding: 5px;
-}
-
-.footer-icon-mobile{
+.footer{
+    flex-basis: 10%;
+    background-color: #000000;
     text-align: center;
 }
 
-.footer-icon-mobile .fa{
-    padding: auto 0;
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
-    margin: 5px 7px;
-    border-radius: 0%;
-    background-color: #22DFC0;
-    color: #17252A;
-    display: none;
-}
-
-.bottom-footer{
-    background-color: #17252A;
-    color: #feffff;
-    text-align: center;
-    padding: 2%;
-}
-
-.border-top{
-    margin: 0 5%;
-    border-top: 1px solid #22DFC0;
-}
-
-.border-top p{
-    padding: 2%;
+.footer p{
+    font-size: 0.6em;
+    letter-spacing: 0.25em;
+    font-weight:lighter;
+    color: #797575;
 }
 
 @media screen and (min-width: 768px){
@@ -718,7 +443,7 @@ footer{
 
 @media screen and (max-width: 768px){
     .jumbotron{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .column-content{
@@ -730,109 +455,58 @@ footer{
         width: fit-content;
     }
 
+    .container-column{
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .image-jumbotron{
+        text-align: center;
+    }
+
     .about-container{
         flex-direction: column;
-        margin-top: 25px;
-        height: 900px;
-    }
-
-    .content-section{
-        padding: 0px 15% 0 50px;
-        flex-basis: 70%;
-    }
-
-    .title-section{
-        flex-basis: 30%;
-        padding: 10% 0 0 50px;
-    }
-
-    .problem-article-odd{
-        flex-direction: column;
-    }
-
-    .problem-article-even{
-        flex-direction: column-reverse;
-    }
-
-    .problem-article-even .title-section,
-    .problem-article-even .content-section,
-    .problem-article-odd .title-section,
-    .problem-article-odd .content-section{
-        padding: 30px;
+        margin-top: 0px;
+        padding: 30px 50px;
+        height: 500px;
     }
 
     .title-button{
-        margin: 2% 30%;
-        padding: 2% 2%;
+        margin: 20px 50px;
     }
 
-    .container-card{
-        flex-direction: column;
+    .about-container p{
+        font-size: 0.75em;
     }
 
-    .container-header-flex{
-        flex-direction: column;
+    .portofolio-section{
+        height: 2550px;
+        padding: 0px 50px 30px 50px;
     }
     
-    .footer-about-contact{
-        flex-direction: column;
-    }
-    
-    .footer-product-sosmed{
+    .psm-column{
         flex-direction: column;
     }
 
-    .flex-row p,
-    .flex-row h3{
-        margin: 0px 10px 0px 0px;
-        text-align: center;
-        color: #feffff;
-        line-height: 25px;
+    .psm-box-2,
+    .psm-box-1{
+        margin: 20px 0px 20px 0px;
     }
 
-    .flex-row .logo-company{
-        display: block;
+    .contact-section{
+        padding: 0px 40px;
     }
 
-    .product-list{
-        display: block;
-        text-align: center;
-        margin: 0;
-    }
-
-    .footer-icon{
-        display: none;
-    }
-
-    .footer-icon-mobile .fa{
-        display: inline-block;
-        transition-duration: 0.5s;
-    }
-
-    .footer-icon-mobile .fa:hover{
-        border: 1px solid #22DFC0;
-        background-color: #17252A;
-        color: #22DFC0;
-    }
-
-
-    .form-section{
+    .csm-column{
         flex-direction: column;
     }
 
-    .main-form input{
-        padding: 10px 30% 10px 10px;
+    .csm-box:nth-child(2){
+        margin-left: 0px;
     }
 
-    .submit-form .submit-button{
-        margin: 10% 30%;
-    }
-
-    .my-profile{
-        margin-left: 100px;
-    }
-
-    .my-profile .image-profile img{
-        width: 150px;
+    .csmb-text p{
+        font-size: 1.5em;
+        font-weight: bold;
     }
 }
